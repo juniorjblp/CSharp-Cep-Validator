@@ -31,7 +31,14 @@ namespace Domain.ValueObjects
                 }
             }
 
+            if (_onlyDigitsCep.Length != 8)
+            {
+                IsValid = false;
+                return;
+            }
+
             _value = Convert.ToInt32(_onlyDigitsCep).ToString(@"00000\-000");
+
 
             IsValid = Regex.IsMatch(_value, @"^\d{5}-\d{3}");
 
