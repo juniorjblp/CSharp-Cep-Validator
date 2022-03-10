@@ -1,1 +1,1 @@
-# CSharp-Cep-Validator
+Struct simples que recebe uma string com ou sem - e valida usando Regex.
