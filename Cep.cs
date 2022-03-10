@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +17,7 @@ namespace Domain.ValueObjects
         {
             _onlyDigitsCep = string.Empty;
 
-            if (value == null)
+            if (value == null || value.Length != 8)
             {
                 IsValid = false;
                 return;
