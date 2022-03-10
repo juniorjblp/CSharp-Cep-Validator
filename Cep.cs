@@ -17,7 +17,7 @@ namespace Domain.ValueObjects
         {
             _onlyDigitsCep = string.Empty;
 
-            if (value == null || value.Length != 8)
+            if (value == null)
             {
                 IsValid = false;
                 return;
