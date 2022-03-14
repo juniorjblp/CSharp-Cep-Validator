@@ -1,3 +1,3 @@
-Struct simples que recebe uma string com ou sem - e valida usando Regex.
+Simple struct to validate brazilian zip code. Accepts only numbers values and with - values.
 
-Linguagem: C#
+Language: C#
